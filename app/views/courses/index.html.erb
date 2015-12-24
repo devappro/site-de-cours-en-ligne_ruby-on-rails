@@ -3,8 +3,12 @@
 <hr/>
 
 <% @courses.each do |course| %>
+
 <article>
     <h2> <%= course.title %> </h2>
+    
+        <%= image_tag course.image.url(:thumb), alt: course.title %>
+    
     <p> <%= course.description%> </p>
     <br/>
 </article>

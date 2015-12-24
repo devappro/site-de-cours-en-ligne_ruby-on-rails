@@ -1,10 +1,28 @@
 source 'https://rubygems.org'
 
+
 # Administrate - system
 gem 'administrate', '~> 0.1.2'
 
+
 # Gestion des variables d'environnement pour masquer mot de passe de l'Administrate
 gem 'dotenv-rails', :groups => [:development, :test]
+
+
+# Gestion de l'upload: pour l'utiliser d'après la doc faut aussi installer la gem imageMagic pour la gestion des image
+gem 'paperclip', '~> 4.3', '>= 4.3.2'
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'

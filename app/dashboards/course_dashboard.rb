@@ -11,6 +11,7 @@ class CourseDashboard < Administrate::BaseDashboard
     id: Field::Number,
     title: Field::String,
     description: Field::Text,
+    image: PaperclipField,
     created_at: Field::DateTime,
     updated_at: Field::DateTime,
     slug: Field::String,
@@ -24,6 +25,7 @@ class CourseDashboard < Administrate::BaseDashboard
   COLLECTION_ATTRIBUTES = [
     :id,
     :title,
+    :image,
     :description,
     :created_at,
   ]
@@ -38,6 +40,7 @@ class CourseDashboard < Administrate::BaseDashboard
   FORM_ATTRIBUTES = [
     :title,
     :description,
+    :image,
     :slug,
   ]
 
