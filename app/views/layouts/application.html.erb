@@ -7,21 +7,34 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  
+  
+
+  
+  
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  
+  
+  
+  
+  
+  
 </head>
 
 <body>
 
-<h1> Online Courses App </h1>
+  <%= render "layouts/partials/nav"  %>
+
+  <div class="container" id="content">
+  
+    <%= yield %>
+    
+    <%= render "layouts/partials/footer"  %>
+    
+  </div>
 
 
-<%= render "layouts/partials/nav"  %>
 
-<%= yield %>
-
-
-<hr/>
-
-<%= render "layouts/partials/footer"  %>
 
 
 </body>

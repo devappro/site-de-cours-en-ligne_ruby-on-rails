@@ -13,8 +13,8 @@ gem 'dotenv-rails', :groups => [:development, :test]
 gem 'paperclip', '~> 4.3', '>= 4.3.2'
 
 
-
-
+# Bootstrap sass
+gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 
 
 

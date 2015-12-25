@@ -1,0 +1,23 @@
+@import "bootstrap-sprockets";
+@import "bootstrap";
+
+
+body {
+    padding-top: 70px;
+}
+
+
+#main-footer {
+    margin-top: 5em;
+}
+
+#content, #main-footer, main-menu {
+    
+    font-family: 'Roboto', sans-serif;
+}
+
+
+html.turbolinks-progress-bar::before {
+  background-color: azure !important;
+  height: 3px !important;
+}
